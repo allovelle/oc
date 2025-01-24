@@ -66,6 +66,12 @@ def parse_asm(src):
         yield Instruction(instruction[0], instruction[1:])
 
 
+def a3_to_arm_macos(instructions):
+    "A3: Architecture Agnostic Assembly"
+    # 1. Do first pass over instructions, gather all the labels and jumps
+    # 2. Go back and fill in the holes
+    # 3. Write resulting buffer to Mach-O ELF file
+
 def main(args=None):
     args = args or []
     instructions = [*parse_asm(ASM_SRC)]
