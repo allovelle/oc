@@ -1,2 +1,2 @@
-# oc
-Origin C Compiler
+# oc - objective c runtime & macos kernel daemon
+# oc - origin c compiler
